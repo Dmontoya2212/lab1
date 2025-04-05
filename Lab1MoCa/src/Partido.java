@@ -61,7 +61,7 @@ public class Partido {
         System.out.println("\n" + equipoGanador());
     }
 
-    // Calcular el jugador con más goles usando forEach
+    // Calcular el jugador con más goles
     public Jugador jugadorConMasGoles() {
         final Jugador[] mejorJugador = {null};
         final int[] maxGoles = {0};
@@ -83,7 +83,7 @@ public class Partido {
         return mejorJugador[0];
     }
 
-    // Filtrar jugadores con más de 5 goles usando forEach
+    // Filtrar jugadores con más de 5 goles usando
     public List<Jugador> jugadoresConMasDeCincoGoles() {
         List<Jugador> jugadoresFiltrados = new ArrayList<>();
         equipoA.forEach(jugador -> {
@@ -99,7 +99,7 @@ public class Partido {
         return jugadoresFiltrados;
     }
 
-    // Actualizar estadísticas de un jugador usando forEach
+    // Actualizar estadísticas de un jugador
     public void actualizarEstadisticas(int jugadorId, int nuevosGoles, int nuevosPartidos) {
         equipoA.forEach(jugador -> {
             if (jugador.getId() == jugadorId) {
